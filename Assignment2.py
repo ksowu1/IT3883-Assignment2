@@ -11,13 +11,16 @@
 #          highest to lowest average, and displays the results.
 # Resources Used: Course materials, Python documentation, and class notes.
 
-def process_student_grades(input_filename):
+def process_student_grades():
+
+    # Ask the user for the name of the input file
+    filename = input("Enter the input file name: ")
 
     # Create an empty list to store student information
     students = []
 
     # Open and read the input file
-    with open(input_filename, "r") as file:
+    with open(filename, "r") as file:
 
         # Process each student one line at a time
         for line in file:
@@ -56,4 +59,4 @@ def process_student_grades(input_filename):
 
 # Start the program
 if __name__ == "__main__":
-    main
+    process_student_grades()
